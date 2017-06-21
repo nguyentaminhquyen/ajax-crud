@@ -1,0 +1,6 @@
+<h1>List of books</h1>
+<%= link_to "New Book", new_book_path, id: "new_link" %>
+<h2>This book list</h2>
+<div class="books" id="books_list">
+  <%= render @books %>
+</div>

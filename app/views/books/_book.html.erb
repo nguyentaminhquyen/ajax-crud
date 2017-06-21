@@ -1,0 +1,7 @@
+<%= form_for book, remote: true do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :description %>
+  <%= f.text_field :author_name%>
+  <%= f.submit "Update" %>
+  <%= link_to "(remove)", book, method: :delete, data: {confirm: "Are you sure?"} %>
+<% end %>
